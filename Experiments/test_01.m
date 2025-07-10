@@ -18,6 +18,7 @@ irLen = 2*fs;
 for i = 1:n_fdns
     [B, C, A, delays] = unpack_params(init_fdns, i);
     [residues, poles, direct, isConjugatePolePair, metaData] = dss2pr(delays, A, B, C, D);
+    
 end
 
 %% functions 
